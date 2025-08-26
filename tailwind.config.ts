@@ -84,11 +84,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neon-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary))',
+					},
+					'50%': {
+						boxShadow: '0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary)), 0 0 40px hsl(var(--primary))',
+					},
+				},
+				'case-shake': {
+					'0%, 100%': { transform: 'rotate(0deg)' },
+					'10%': { transform: 'rotate(-1deg)' },
+					'20%': { transform: 'rotate(1deg)' },
+					'30%': { transform: 'rotate(-1deg)' },
+					'40%': { transform: 'rotate(1deg)' },
+					'50%': { transform: 'rotate(-1deg)' },
+					'60%': { transform: 'rotate(1deg)' },
+					'70%': { transform: 'rotate(-1deg)' },
+					'80%': { transform: 'rotate(1deg)' },
+					'90%': { transform: 'rotate(-1deg)' },
+				},
+				'item-scroll': {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(-100%)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'case-shake': 'case-shake 0.5s ease-in-out',
+				'item-scroll': 'item-scroll 3s ease-out forwards',
 			}
 		}
 	},
